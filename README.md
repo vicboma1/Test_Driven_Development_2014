@@ -6,7 +6,7 @@ Ejercicios del curso "Metodologías Ágiles - BeCode".
 Se pretende usar técnicas de ingenería del software para el uso de Test-driven development (TDD).
 
 ```java
-Grafo del repositorio
+Grafo del repositorio      <[`-´]>! Ooooorrrr - YUUUUUUUUU - kennn!!!!
 
 /**
  * Katas
@@ -14,52 +14,45 @@ Grafo del repositorio
  *   |
  *   |__ src.com.akamon.tdd
  *   |                   |
- *   |                   |__ fizBuzz -> FizzBuzz.java
+ *   |                   |__ fizBuzz -> FizzBuzz.java (100% classes, 94% lines covered)
  *   |                   |
- *   |                   |__ countLines
+ *   |                   |__ countLines (83% classes, 96% lines covered)
  *   |                        |
  *   |                        |__ api 
  *   |                        |    |
  *   |                        |    |__ reader -> IReader.java
  *   |                        |         |
- *   |                          |         |__ processor -> IReaderProcessor.java
- *   |                          |
- *   |                          |__ src
- *   |                               |
- *   |                               |__ utils -> LineMapper.java
- *   |                               |
- *   |                               |__ pattern -> Pattern.java
- *   |                               |
- *   |                               |__ reader -> Reader.java
- *   |                                    |
- *   |                                    |__ processor -> ReaderProcessor.java
- *   |                                         |
- *   |                                         |__ internal -> InternalParser.java
+ *   |                        |         |__ processor -> IReaderProcessor.java
+ *   |                        |
+ *   |                        |__ src (80% classes, 96% lines covered)
+ *   |                             |
+ *   |                             |__ utils -> LineMapper.java (100% classes, 100% lines covered)
+ *   |                             |
+ *   |                             |__ pattern -> Pattern.java (0% classes, 0% lines covered)
+ *   |                             |
+ *   |                             |__ reader -> Reader.java (100% classes, 100% lines covered)
+ *   |                                  |
+ *   |                                  |__ processor -> ReaderProcessor.java (100% classes, 100% lines covered)
+ *   |                                       |
+ *   |                                       |__ internal -> InternalParser.java (100% classes, 97% lines covered)
  *   |
  *   |
  *   |__ test.com.akamon.tdd
  *                        |
- *                        |__ fizBuzz -> FizzBuzzTest.java
+ *                        |__ fizBuzz -> FizzBuzzTest.java (9/9 Passed)
  *                        |
- *                        |__ countLines
- *                             |
- *                             |__ api 
- *                             |    |
- *                             |    |__ reader -> IReaderTest.java
- *                             |         |
- *                             |         |__ processor -> IReaderProcessor.java
+ *                        |__ countLines (31/31 Passed)
  *                             |
  *                             |__ src
  *                                    |
- *                                    |__ utils -> LineMapperTest.java
+ *                                    |__ utils -> LineMapperTest.java (31/31 Passed)
  *                                    |
- *                                    |__ pattern -> PatternTest.java
  *                                    |
- *                                    |__ reader -> ReaderTest.java
+ *                                    |__ reader -> ReaderTest.java (5/5 Passed)
  *                                         |
- *                                         |__ processor -> ReaderProcessorTest.java
+ *                                         |__ processor -> ReaderProcessorTest.java (15/15 Passed)
  *                                              |
- *                                              |__ internal -> InternalParserTest.java
+ *                                              |__ internal -> InternalParserTest.java (3/3 Passed)
  *           
  *     
  *     
