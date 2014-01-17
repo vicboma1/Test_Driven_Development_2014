@@ -3,8 +3,6 @@ Test_Driven_Development_2014
 
 Ejercicios del curso "Metodologías Ágiles - BeCode".
 
-Se pretende usar técnicas de ingenería del software para el uso de Test-driven development (TDD).
-
 ```java
 Grafo del repositorio      <[`-´]>! Ooooorrrr - YUUUUUUUUU - kennn!!!!
 
