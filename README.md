@@ -45,10 +45,10 @@ Grafo del repositorio      <[`-´]>! Ooooorrrr - YUUUUUUUUU - kennn!!!!
  *                             |
  *                             |__ src
  *                                    |
- *                                    |__ utils -> LineMapperTest.java (31/31 Passed)
+ *                                    |__ utils -> LineMapperTest.java (5/5 Passed)
  *                                    |
  *                                    |
- *                                    |__ reader -> ReaderTest.java (5/5 Passed)
+ *                                    |__ reader -> ReaderTest.java (8/8 Passed)
  *                                         |
  *                                         |__ processor -> ReaderProcessorTest.java (15/15 Passed)
  *                                              |
