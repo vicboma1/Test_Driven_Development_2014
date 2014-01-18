@@ -12,6 +12,7 @@ public class DBA
 	private static final String VICTOR = "Victor";
 	private static final String PASSWORD = "Password";
 	private static final String NULL = "";
+	private static final int TIMER = 2000;
 
 	private String name;
 
@@ -20,14 +21,9 @@ public class DBA
 		this.name = name;
 	}
 
-	public String getName()
-	{
-		return name;
-	}
-
 	public String run() throws InterruptedException
 	{
-		Thread.sleep(1);
+		Thread.sleep(TIMER);
 		return (this.name.equals(VICTOR) ? PASSWORD : NULL);
 	}
 

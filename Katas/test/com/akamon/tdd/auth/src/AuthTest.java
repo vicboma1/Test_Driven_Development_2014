@@ -29,15 +29,16 @@ public class AuthTest
 	{
 		internal = new Internal(VICTOR,PASSWORD);
 		socialMedia = new SocialMedia(VICTOR,PASSWORD);
+
+		this.auth = new Auth()
+			.setInternal(internal)
+			.setSocialMedia(socialMedia);
+
 	}
 
 	@Test
 	public void testRun() throws Exception
 	{
-		this.auth = new Auth()
-							.setInternal(internal)
-							.setSocialMedia(socialMedia);
-
 		final Boolean excepted = true;
 
 		Boolean auth = this.auth.run();
@@ -48,10 +49,6 @@ public class AuthTest
 	@Test
 	public void testRunRejected() throws Exception
 	{
-		this.auth = new Auth()
-						.setInternal(internal)
-						.setSocialMedia(socialMedia);
-
 		final Boolean excepted = true;
 
 		Boolean auth = this.auth.run();

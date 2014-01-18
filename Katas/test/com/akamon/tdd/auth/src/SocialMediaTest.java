@@ -13,11 +13,15 @@ import org.junit.Test;
  */
 public class SocialMediaTest
 {
+	private static final String VICTOR = "Victor";
+	private static final String JUANMA = "Juanma";
+	private static final String PASSWORD = "Password";
+
 	@Test
 	public void testAuthenticationVictor() throws Exception
 	{
 		final Boolean excepted = true;
-		final ISocialMedia socialMedia = new SocialMedia("Victor", "Password");
+		final ISocialMedia socialMedia = new SocialMedia(VICTOR, PASSWORD);
 
 		Boolean pass = socialMedia.authentication();
 
@@ -28,7 +32,7 @@ public class SocialMediaTest
 	public void testAuthenticationJuanma() throws Exception
 	{
 		final Boolean excepted = false;
-		final ISocialMedia socialMedia = new SocialMedia("Juana", "Password");
+		final ISocialMedia socialMedia = new SocialMedia(JUANMA, PASSWORD);
 
 		Boolean pass = socialMedia.authentication();
 

@@ -6,11 +6,16 @@ import org.junit.Test;
 
 public class DBATest
 {
+	private static final String VICTOR = "Victor";
+	private static final String JUANMA = "Juanma";
+	private static final String PASSWORD = "Password";
+	private static final String NULO = "";
+
 	@Test
 	public void testRunVictor() throws Exception
 	{
-		final String excepted = "Password";
-		final DBA dba = new DBA("Victor");
+		final String excepted = PASSWORD;
+		final DBA dba = new DBA(VICTOR);
 
 		String executed = dba.run();
 
@@ -20,8 +25,8 @@ public class DBATest
 	@Test
 	public void testRunJuanma() throws Exception
 	{
-		final String excepted = "";
-		final DBA dba = new DBA("Juanma");
+		final String excepted = NULO;
+		final DBA dba = new DBA(JUANMA);
 
 		String executed = dba.run();
 
