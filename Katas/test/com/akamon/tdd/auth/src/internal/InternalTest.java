@@ -5,6 +5,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 /**
  * Created with IntelliJ IDEA.
  * User: vicboma
@@ -17,6 +20,7 @@ public class InternalTest
 	private static final String VICTOR = "Victor";
 	private static final String JUANMA = "Juanma";
 	private static final String PASSWORD = "Password";
+	private static final String NOT_PASSWORD = "NO_Password";
 
 	private  IInternal internal;
 
@@ -47,11 +51,42 @@ public class InternalTest
 	}
 
 	@Test
-	public void testAuthenticationJuanma() throws Exception
+	public void testAuthenticationJuanmaMock() throws Exception
 	{
 		final boolean excepted = false;
 
-		final IInternal internal = new Internal(JUANMA, PASSWORD);
+		DBA dbaMock = mock(DBA.class);
+		when(dbaMock.run()).thenReturn(NOT_PASSWORD);
+		internal.config(dbaMock);
+
+		Boolean auth = internal.authentication();
+
+		Assert.assertEquals("Not password", auth, excepted );
+	}
+
+	@Test
+	public void testMockDBAAccept() throws Exception
+	{
+		final boolean excepted = true;
+
+		DBA dbaMock = mock(DBA.class);
+		when(dbaMock.run()).thenReturn(PASSWORD);
+		internal.config(dbaMock);
+
+		Boolean auth = internal.authentication();
+
+		Assert.assertEquals("Not password",excepted,auth );
+	}
+
+	@Test
+	public void testMockDBARejected() throws Exception
+	{
+		final boolean excepted = false;
+
+		DBA dbaMock = mock(DBA.class);
+		when(dbaMock.run()).thenReturn(VICTOR);
+		internal.config(dbaMock);
+
 		Boolean auth = internal.authentication();
 
 		Assert.assertEquals("Not password",excepted,auth );

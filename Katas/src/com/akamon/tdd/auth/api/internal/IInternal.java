@@ -1,5 +1,7 @@
 package com.akamon.tdd.auth.api.internal;
 
+import com.akamon.tdd.auth.src.internal.DBA;
+
 /**
  * Created with IntelliJ IDEA.
  * User: vicboma
@@ -11,4 +13,5 @@ public interface IInternal
 {
 	String getPassword();
 	boolean authentication()  throws InterruptedException;
+	IInternal config(DBA dba);
 }

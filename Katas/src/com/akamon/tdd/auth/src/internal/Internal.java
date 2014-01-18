@@ -12,13 +12,18 @@ import com.akamon.tdd.auth.api.internal.IInternal;
 public class Internal implements IInternal
 {
 	private DBA dba;
-
 	private String password;
 
 	public Internal(String name, String password)
 	{
 		this.password = password;
 		this.dba = new DBA(name);
+	}
+
+	public IInternal config(DBA dba)
+	{
+		this.dba = dba;
+		return this;
 	}
 
 	public String getPassword()

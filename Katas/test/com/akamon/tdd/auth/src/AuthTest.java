@@ -1,12 +1,15 @@
 package com.akamon.tdd.auth.src;
 
 import com.akamon.tdd.auth.api.IAuth;
-import com.akamon.tdd.auth.api.internal.IInternal;
 import com.akamon.tdd.auth.api.ISocialMedia;
+import com.akamon.tdd.auth.api.internal.IInternal;
 import com.akamon.tdd.auth.src.internal.Internal;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  * Created with IntelliJ IDEA.
@@ -33,7 +36,6 @@ public class AuthTest
 		this.auth = new Auth()
 			.setInternal(internal)
 			.setSocialMedia(socialMedia);
-
 	}
 
 	@Test
@@ -55,4 +57,44 @@ public class AuthTest
 
 		Assert.assertEquals("Not Authentication", auth, excepted);
 	}
+
+	@Test
+	public void testRunMockedAccept() throws Exception
+	{
+		final Boolean excepted = true;
+
+		IInternal internalMock = mock(IInternal.class);
+		ISocialMedia socialMediaMock =  mock(ISocialMedia.class);
+
+		IAuth authWithMocks = new Auth()
+								.setInternal(internalMock)
+								.setSocialMedia(socialMediaMock);
+
+
+		when(authWithMocks.run()).thenReturn(true);
+
+	    Boolean auth = authWithMocks.run();
+
+		Assert.assertEquals("Not Authentication", auth, excepted);
+	}
+
+	@Test
+	public void testRunMockedRejected() throws Exception
+	{
+		final Boolean excepted = false;
+
+		IInternal internalMock = mock(IInternal.class);
+		ISocialMedia socialMediaMock =  mock(ISocialMedia.class);
+
+		IAuth authWithMocks = new Auth()
+			.setInternal(internalMock)
+			.setSocialMedia(socialMediaMock);
+
+		when(authWithMocks.run()).thenReturn(false);
+
+		Boolean auth = authWithMocks.run();
+
+		Assert.assertEquals("Not Authentication", auth, excepted);
+	}
+
 }
