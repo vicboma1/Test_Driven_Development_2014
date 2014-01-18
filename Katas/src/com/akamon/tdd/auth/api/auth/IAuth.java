@@ -1,7 +1,7 @@
-package com.akamon.tdd.auth.api;
+package com.akamon.tdd.auth.api.auth;
 
 
-import com.akamon.tdd.auth.api.internal.IInternal;
+import com.akamon.tdd.auth.api.auth.internal.IInternal;
 
 public interface IAuth
 {

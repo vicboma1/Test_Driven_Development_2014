@@ -1,4 +1,4 @@
-package com.akamon.tdd.auth.src.internal;
+package com.akamon.tdd.auth.src.auth.internal;
 
 /**
  * Created with IntelliJ IDEA.

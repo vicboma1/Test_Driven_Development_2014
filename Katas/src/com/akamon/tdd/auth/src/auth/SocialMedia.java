@@ -1,6 +1,6 @@
-package com.akamon.tdd.auth.src;
+package com.akamon.tdd.auth.src.auth;
 
-import com.akamon.tdd.auth.api.ISocialMedia;
+import com.akamon.tdd.auth.api.auth.ISocialMedia;
 
 /**
  * Created with IntelliJ IDEA.

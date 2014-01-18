@@ -1,4 +1,4 @@
-package com.akamon.tdd.auth.src.internal;
+package com.akamon.tdd.auth.src.auth.internal;
 
 import org.junit.Assert;
 import org.junit.Test;

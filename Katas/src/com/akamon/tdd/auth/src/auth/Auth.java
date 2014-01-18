@@ -1,9 +1,9 @@
-package com.akamon.tdd.auth.src;
+package com.akamon.tdd.auth.src.auth;
 
 
-import com.akamon.tdd.auth.api.IAuth;
-import com.akamon.tdd.auth.api.internal.IInternal;
-import com.akamon.tdd.auth.api.ISocialMedia;
+import com.akamon.tdd.auth.api.auth.IAuth;
+import com.akamon.tdd.auth.api.auth.internal.IInternal;
+import com.akamon.tdd.auth.api.auth.ISocialMedia;
 
 public class Auth implements IAuth
 {

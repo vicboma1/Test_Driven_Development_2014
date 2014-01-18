@@ -1,10 +1,12 @@
 package com.akamon.tdd.auth.src;
 
-import com.akamon.tdd.auth.api.IAuth;
-import com.akamon.tdd.auth.api.ISocialMedia;
-import com.akamon.tdd.auth.api.internal.IInternal;
-import com.akamon.tdd.auth.src.internal.DBA;
-import com.akamon.tdd.auth.src.internal.Internal;
+import com.akamon.tdd.auth.api.auth.IAuth;
+import com.akamon.tdd.auth.api.auth.ISocialMedia;
+import com.akamon.tdd.auth.api.auth.internal.IInternal;
+import com.akamon.tdd.auth.src.auth.Auth;
+import com.akamon.tdd.auth.src.auth.SocialMedia;
+import com.akamon.tdd.auth.src.auth.internal.DBA;
+import com.akamon.tdd.auth.src.auth.internal.Internal;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

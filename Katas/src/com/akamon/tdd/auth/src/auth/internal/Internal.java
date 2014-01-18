@@ -1,6 +1,6 @@
-package com.akamon.tdd.auth.src.internal;
+package com.akamon.tdd.auth.src.auth.internal;
 
-import com.akamon.tdd.auth.api.internal.IInternal;
+import com.akamon.tdd.auth.api.auth.internal.IInternal;
 
 /**
  * Created with IntelliJ IDEA.

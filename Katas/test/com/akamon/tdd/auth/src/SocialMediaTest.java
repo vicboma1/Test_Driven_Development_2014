@@ -1,6 +1,7 @@
 package com.akamon.tdd.auth.src;
 
-import com.akamon.tdd.auth.api.ISocialMedia;
+import com.akamon.tdd.auth.api.auth.ISocialMedia;
+import com.akamon.tdd.auth.src.auth.SocialMedia;
 import org.junit.Assert;
 import org.junit.Test;
 
