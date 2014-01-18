@@ -9,7 +9,7 @@ Grafo del repositorio      <[`-´]>! Ooooorrrr - YUUUUUUUUU - kennn!!!!
 
 Source:
 
-Se han hecho participes una premisas para el desarrollo de código ágil tales como:
+Se han hecho participes unas premisas para el desarrollo de código ágil tales como:
 No documentar el código. Éste debe de ser lo suficientemente expresivo.
 No utilizar primitivas en el interior de los métodos privados siempre que se pueda.
 Identificar lo máximo posible el espacio de los nombres de los método y de las variables.
@@ -75,7 +75,7 @@ Sigo conservando algunas "cleveradas" para los ejercicios.   !<[¬_¬]> ...
 
  Test:
 
- En el ejercicio de "auth" los Test contiene mocks, stabs y código en bloque usando las clases
+ En el ejercicio de "auth" los Test contienen mocks, stabs y código en bloque usando las clases
  sin mockear. Se ha hecho así para poder ver la evolución de los Test. Puede que tarde un poco en
  pasar los UT porque el acceso a la "BDA" no se ha mockeado en algunos Test.
 
