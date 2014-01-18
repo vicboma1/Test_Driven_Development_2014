@@ -7,7 +7,21 @@ Ejercicios del curso "Metodologías Ágiles - BeCode".
 Grafo del repositorio      <[`-´]>! Ooooorrrr - YUUUUUUUUU - kennn!!!!
 
 
-Source
+Source:
+
+Se han hecho participes una premisas para el desarrollo de código ágil tales como:
+No documentar el código. Éste debe de ser lo suficientemente expresivo.
+No utilizar primitivas en el interior de los métodos privados siempre que se pueda.
+Identificar lo máximo posible el espacio de los nombres de los método y de las variables.
+Uso de interfaces siempre que se pueda para reforzar el código.
+Con el uso de objetos intentar no usar switch/[if/else] y buscar otras técnicas como poliformismo...
+Injección de dependencias manual. Evitar usar mierd@$ de terceros sin saber cómo funciona por dentro.
+Código simple, fácil de entender, mantenible, robusto y reutiliable.
+
+...
+
+Sigo conservando algunas "cleveradas" para los ejercicios.   !<[¬_¬]> ...
+
 
 /**
  * Katas
@@ -51,24 +65,19 @@ Source
  *                                  |
  *                                  |__ auth -> [ Auth.java (100% classes, 81% lines covered)
  *                                       |        SocialMedia.java (100% classes, 100% lines covered) ]
- *                                         |
- *                                         |__ internal -> [ DBA.java (66% classes, 71% lines covered)
- *                                                           Internal.java (100% classes, 100% lines covered) ]
+ *                                       |
+ *                                       |__ internal -> [ DBA.java (66% classes, 71% lines covered)
+ *                                                         Internal.java (100% classes, 100% lines covered) ]
  *
  */
 
 
 
+ Test:
 
-
-
-
-
-
-
-
-
- Test
+ En el ejercicio de "auth" los Test contiene mocks, stabs y código en bloque usando las clases
+ sin mockear. Se ha hecho así para poder ver la evolución de los Test. Puede que tarde un poco en
+ pasar los UT porque el acceso a la "BDA" no se ha mockeado en algunos Test.
 
 /**
  *  Katas
@@ -102,37 +111,4 @@ Source
  *                                       |__ internal -> [ DBATest.java (4/4 Passed)
  *                                                         InternalTest.java (6/6 Passed) ]
  *
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                                                */                                                                                                              *                                                                                                               *                                                           Internal.java (100% classes, 100% lines covered) ]  *                                         |__ internal -> [ DBA.java (66% classes, 71% lines covered)           *                                         |                                                                     *                                       |        SocialMedia.java (100% classes, 100% lines covered) ]          *                                  |__ auth -> [ Auth.java (100% classes, 81% lines covered)                    *                                  |                                                                            *                             |__ src                                                                           *                             |                                                                                 *                             |                                                                                 *                             |         |__ internal -> IInternal.java                                          *                             |         |                                                                       *                             |         |        ISocialMedia.java ]                                            *                             |    |__ auth -> [ IAuth.java
+ */                                                                                                              *                                                                                                               *                                                           Internal.java (100% classes, 100% lines covered) ]  *                                         |__ internal -> [ DBA.java (66% classes, 71% lines covered)           *                                         |                                                                     *                                       |        SocialMedia.java (100% classes, 100% lines covered) ]          *                                  |__ auth -> [ Auth.java (100% classes, 81% lines covered)                    *                                  |                                                                            *                             |__ src                                                                           *                             |                                                                                 *                             |                                                                                 *                             |         |__ internal -> IInternal.java                                          *                             |         |                                                                       *                             |         |        ISocialMedia.java ]                                            *                             |    |__ auth -> [ IAuth.java
