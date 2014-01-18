@@ -31,6 +31,19 @@ public class Auth implements IAuth
 	@Override
 	public boolean run()
 	{
-		return this.socialMedia.authentication();
+		Boolean isAuth = false;
+
+		try
+		{
+		    isAuth = this.internal.authentication();
+		}
+		catch (InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			return (isAuth) ? this.socialMedia.authentication() : false;
+		}
 	}
 }

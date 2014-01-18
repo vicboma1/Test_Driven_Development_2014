@@ -91,4 +91,32 @@ public class InternalTest
 
 		Assert.assertEquals("Not password",excepted,auth );
 	}
+
+	/**
+	 * He utilizado solo una variable para el valor esperado.
+	 * He jugado un poco con la "cleverada" del ! antes de la variables.
+	 * Es que no queria llenar el campo de declaracion con 4 booleanos.
+	 * @throws Exception
+	 */
+	@Test
+	public void testMockDBATimerOut() throws Exception
+	{
+		final boolean excepted = true;
+
+		long time_start, time_end;
+		Boolean isTimerOut;
+
+		DBA dbaMock = mock(DBA.class);
+		internal.config(dbaMock);
+
+		time_start = System.currentTimeMillis();
+		when(dbaMock.run()).thenReturn(VICTOR);
+		time_end   = System.currentTimeMillis();
+
+		Boolean auth = internal.authentication();
+		isTimerOut = ((time_end - time_start) > DBA.TIMER);
+
+		Assert.assertEquals("TimerOut",!isTimerOut,excepted );
+		Assert.assertEquals("Not password",!excepted,auth );
+	}
 }

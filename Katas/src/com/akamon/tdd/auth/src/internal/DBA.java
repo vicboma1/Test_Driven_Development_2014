@@ -12,11 +12,16 @@ public class DBA
 	private static final String VICTOR = "Victor";
 	private static final String PASSWORD = "Password";
 	private static final String NULL = "";
-	private static final int TIMER = 2000;
+	public static final int TIMER = 5000;
 
 	private String name;
 
 	public DBA(String name)
+	{
+		this.name = name;
+	}
+
+	public void name(String name)
 	{
 		this.name = name;
 	}

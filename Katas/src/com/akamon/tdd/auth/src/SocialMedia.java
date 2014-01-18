@@ -28,7 +28,7 @@ public class SocialMedia implements ISocialMedia
 	public boolean authentication()
 	{
 		Boolean isPass =  this.pass.equals(PASSWORD) ? true : false;
-		boolean isLogin = this.name.equals(VICTOR) ? true : false;
+		Boolean isLogin = this.name.equals(VICTOR)   ? true : false;
 
 		return (isLogin && isPass);
 	}
