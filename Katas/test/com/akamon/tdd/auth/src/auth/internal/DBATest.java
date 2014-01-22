@@ -65,6 +65,8 @@ public class DBATest
 		final String excepted = PASSWORD;
 		final DBA dba = mock(DBA.class);
 
+		when(dba.run()).thenReturn(PASSWORD);
+
 		dba.name(VICTOR);
 		String executed = dba.run();
 
@@ -76,6 +78,8 @@ public class DBATest
 	{
 		final String excepted = NULO;
 		final DBA dba = mock(DBA.class);
+
+		when(dba.run()).thenReturn(NULO);
 
 		dba.name(JUANMA);
 		String executed = dba.run();

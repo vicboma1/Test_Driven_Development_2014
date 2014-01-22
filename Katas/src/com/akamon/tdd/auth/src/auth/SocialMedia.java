@@ -13,7 +13,6 @@ public class SocialMedia implements ISocialMedia
 {
 	private static final String VICTOR = "Victor";
 	private static final String PASSWORD = "Password";
-	private static final String NULL = "";
 
 	private String name;
 	private String pass;
@@ -27,8 +26,8 @@ public class SocialMedia implements ISocialMedia
 	@Override
 	public boolean authentication()
 	{
-		Boolean isPass =  this.pass.equals(PASSWORD) ? true : false;
-		Boolean isLogin = this.name.equals(VICTOR)   ? true : false;
+		final boolean isPass =  this.pass.equals(PASSWORD) ? true : false;
+		final boolean isLogin = this.name.equals(VICTOR)   ? true : false;
 
 		return (isLogin && isPass);
 	}

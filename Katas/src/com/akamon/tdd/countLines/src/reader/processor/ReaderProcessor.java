@@ -15,6 +15,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class ReaderProcessor implements IReaderProcessor
 {
+	private static final int ZERO = 0;
 	private InternalParser _internalParser;
 
 	/**
@@ -32,7 +33,7 @@ public class ReaderProcessor implements IReaderProcessor
 	 */
 	public int readLinesExecute(String data)
 	{
-		return (checkLine(data)) ? 0 : readLineProcessor(data) ;
+		return (checkLine(data)) ? ZERO : readLineProcessor(data) ;
 	}
 
 	/**

@@ -47,7 +47,7 @@ public class InternalParser
 	public int run(List<String> linesList)
 	{
 		boolean blockComment = false;
-		Integer sizeProcessorLine = getLengthProcessorLines(linesList);
+		final int sizeProcessorLine = getLengthProcessorLines(linesList);
 
 		for (Integer i = 0; i < sizeProcessorLine; i++)
 		{

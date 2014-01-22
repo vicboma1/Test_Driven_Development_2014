@@ -34,7 +34,7 @@ public class Internal implements IInternal
 	@Override
 	public boolean authentication() throws InterruptedException
 	{
-		String passwordDBA = this.dba.run();
+		final String passwordDBA = this.dba.run();
 
 		return (password.equals(passwordDBA) ? true : false);
 	}

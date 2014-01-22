@@ -21,9 +21,10 @@ public class DBA
 		this.name = name;
 	}
 
-	public void name(String name)
+	public DBA name(String name)
 	{
 		this.name = name;
+		return this;
 	}
 
 	public String run() throws InterruptedException
