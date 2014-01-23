@@ -1,4 +1,4 @@
-package com.akamon.tdd.powerVictor_ito;
+package com.akamon.tdd.utils.reflect.powerVictor_ito;
 
 import java.lang.reflect.InvocationTargetException;
 
