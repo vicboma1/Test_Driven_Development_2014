@@ -4,7 +4,7 @@ Test_Driven_Development_2014
 Ejercicios del curso "Metodologías Ágiles - BeCode".
 
 ```java
-Grafo del repositorio      <[`-´]>! Ooooorrrr - YUUUUUUUUU - kennn!!!!
+Grafo del repositorio      <[`-´]>!
 
 
 Source:
@@ -19,9 +19,6 @@ Injección de dependencias manual. Evitar usar mierd@$ de terceros sin saber có
 Código simple, fácil de entender, mantenible, robusto y reutiliable.
 
 ...
-
-Sigo conservando algunas "cleveradas" para los ejercicios.   !<[¬_¬]> ...
-
 
 /**
  * Katas
@@ -111,4 +108,4 @@ Sigo conservando algunas "cleveradas" para los ejercicios.   !<[¬_¬]> ...
  *                                       |__ internal -> [ DBATest.java (4/4 Passed)
  *                                                         InternalTest.java (6/6 Passed) ]
  *
- */                                                                                                              *                                                                                                               *                                                           Internal.java (100% classes, 100% lines covered) ]  *                                         |__ internal -> [ DBA.java (66% classes, 71% lines covered)           *                                         |                                                                     *                                       |        SocialMedia.java (100% classes, 100% lines covered) ]          *                                  |__ auth -> [ Auth.java (100% classes, 81% lines covered)                    *                                  |                                                                            *                             |__ src                                                                           *                             |                                                                                 *                             |                                                                                 *                             |         |__ internal -> IInternal.java                                          *                             |         |                                                                       *                             |         |        ISocialMedia.java ]                                            *                             |    |__ auth -> [ IAuth.java
+ */
