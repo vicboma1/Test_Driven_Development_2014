@@ -109,3 +109,7 @@ Código simple, fácil de entender, mantenible, robusto y reutiliable.
  *                                                         InternalTest.java (6/6 Passed) ]
  *
  */
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vicboma1/test_driven_development_2014/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
