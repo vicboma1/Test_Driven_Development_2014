@@ -1,7 +1,7 @@
 Test_Driven_Development_2014
 ============================
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vicboma1/test_driven_development_2014/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Analytics](https://ga-beacon.appspot.com/UA-68658653-1/injector/readme)](https://github.com/igrigorik/ga-beacon)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vicboma1/test_driven_development_2014/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Analytics](https://ga-beacon.appspot.com/UA-68658653-1/test_driven_development_2014/readme)](https://github.com/igrigorik/ga-beacon)
 
 ###Ejercicios del curso "Metodologías Ágiles - BeCode".
 
