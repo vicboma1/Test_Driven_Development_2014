@@ -1,13 +1,13 @@
 Test_Driven_Development_2014
 ============================
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vicboma1/test_driven_development_2014/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Analytics](https://ga-beacon.appspot.com/UA-68658653-1/test_driven_development_2014/readme)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-68658653-1/test_driven_development_2014/readme)](https://github.com/igrigorik/ga-beacon)
 
-###Ejercicios del curso "Metodologías Ágiles - BeCode".
+### Ejercicios del curso "Metodologías Ágiles - BeCode".
 
-####Grafo del repositorio
+#### Grafo del repositorio
 
-#####Source
+##### Source
 ```
 Se han hecho participes unas premisas para el desarrollo de código ágil tales como:
 No documentar el código. Éste debe de ser lo suficientemente expresivo.
@@ -71,7 +71,7 @@ Código simple, fácil de entender, mantenible, robusto y reutiliable.
  ```
 
 
-#####Test
+##### Test
 
 ```
  En el ejercicio de "auth" los Test contienen mocks, stabs y código en bloque usando las clases
